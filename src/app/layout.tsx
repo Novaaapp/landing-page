@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
+import { Analytics } from "@vercel/analytics/next";
 
 const jakarta = localFont({
   src: "./fonts/PlusJakartaSans-VariableFont_wght.ttf",
@@ -20,7 +21,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${jakarta.variable} antialiased`}>{children}</body>
+      <body className={`${jakarta.variable} antialiased`}>
+        {children}
+        <Analytics />
+      </body>
     </html>
   );
 }
