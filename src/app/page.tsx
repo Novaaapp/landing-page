@@ -203,10 +203,14 @@ export default function Page() {
         {/* New app demo section */}
         <div className="mt-20 w-full ">
           <Image
+            priority
+            loading="eager"
             width={800}
             height={450}
             src="/novaa.png" 
             alt="App Demo" 
+            placeholder="blur"
+            blurDataURL="/novaa.png"
             className="w-full max-w-lg rounded-lg shadow-2xl" 
           />
         </div>
