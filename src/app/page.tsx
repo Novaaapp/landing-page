@@ -77,7 +77,7 @@ export default function Page() {
   const [showThankYou, setShowThankYou] = useState(false);
 
   useEffect(() => {
-    const targetDate = new Date("2025-07-15T00:00:00");
+    const targetDate = new Date("2025-09-30T00:00:00");
 
     const calculateTimeLeft = () => {
       const now = new Date();
